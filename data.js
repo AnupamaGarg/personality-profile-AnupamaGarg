@@ -8,11 +8,9 @@ const personalityProfile = {
             " I believe in Spending time coming up with detail plan"
         ],
         NotAgreewith: [
-            "Todo list is not most important because it helps to organise your actions. ",
-            " ",
-            " "
-
-        ]
+            "Not Agree that Todo list is not most important, I believe todo list is most important because it helps to organise your actions. ",
+            "Not totaly agree that only success broadens learning spectrum instead I believe its failure that causes you to learn from all aspects and hence broadens your learning spectrum",
+            ]
 
 
 
@@ -56,14 +54,14 @@ const saveDatabase = function (databaseObject, localStorageKey) {
 }
 saveDatabase(personalityProfile, "personalInfo");
 
-const loadDatabase = function (localStorageKey) {
+// const loadDatabase = function (localStorageKey) {
     // Get the string version of the database
-    const databaseString = localStorage.getItem(localStorageKey)
+    // const databaseString = localStorage.getItem(localStorageKey)
 
     // Use JSON.parse() to convert the string back into an object
-    return JSON.parse(databaseString)
-}
-console.log(loadDatabase("personalInfo"));
+    // return JSON.parse(databaseString)
+
+// console.log(loadDatabase("personalInfo"));
 
 
 
